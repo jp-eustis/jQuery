@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+	
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<link rel="stylesheet" type="text/css" href="jQuery.css">
+<div id=content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Euismod elementum nisi quis eleifend quam adipiscing vitae. Mauris rhoncus aenean vel elit scelerisque. Sagittis nisl rhoncus mattis rhoncus urna. Egestas maecenas pharetra convallis posuere morbi. Amet porttitor eget dolor morbi non. Habitant morbi tristique senectus et netus. Tortor posuere ac ut consequat semper viverra. Morbi blandit cursus risus at ultrices. Tincidunt eget nullam non nisi est. Risus nullam eget felis eget nunc lobortis. Accumsan in nisl nisi scelerisque. Ultrices dui sapien eget mi.<br><br>
+
+Diam sit amet nisl suscipit adipiscing bibendum. Semper risus in hendrerit gravida rutrum quisque non. Ante in nibh mauris cursus mattis molestie a iaculis. Interdum consectetur libero id faucibus nisl tincidunt eget nullam. Pellentesque elit eget gravida cum sociis. Nec dui nunc mattis enim ut tellus. Donec ac odio tempor orci dapibus. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget. Morbi tristique senectus et netus et. Laoreet id donec ultrices tincidunt. Scelerisque fermentum dui faucibus in ornare quam viverra orci. Dictum non consectetur a erat nam at. Ultrices sagittis orci a scelerisque purus. Orci dapibus ultrices in iaculis nunc sed augue lacus. Elit scelerisque mauris pellentesque pulvinar.<br><br>
+
+Mauris in aliquam sem fringilla ut morbi tincidunt. Et ultrices neque ornare aenean euismod elementum nisi quis eleifend. Pellentesque diam volutpat commodo sed egestas egestas. Aliquet enim tortor at auctor urna nunc id cursus. Suscipit adipiscing bibendum est ultricies integer. Malesuada proin libero nunc consequat interdum varius sit amet mattis. Rhoncus dolor purus non enim praesent elementum facilisis leo. Neque egestas congue quisque egestas diam in arcu. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae. Est lorem ipsum dolor sit.<br><br>
+
+Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sapien nec sagittis aliquam malesuada. Etiam non quam lacus suspendisse faucibus interdum. Tempor id eu nisl nunc. Volutpat consequat mauris nunc congue nisi. Nullam ac tortor vitae purus faucibus ornare. At lectus urna duis convallis convallis tellus. Lorem dolor sed viverra ipsum. Aliquam id diam maecenas ultricies mi eget mauris pharetra et. Ipsum nunc aliquet bibendum enim facilisis gravida neque. Justo eget magna fermentum iaculis eu non. Nulla pellentesque dignissim enim sit amet. Potenti nullam ac tortor vitae.<br><br>
+
+Sit amet facilisis magna etiam tempor orci eu lobortis elementum. Amet risus nullam eget felis. Posuere lorem ipsum dolor sit amet consectetur. Arcu odio ut sem nulla pharetra diam. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Maecenas sed enim ut sem viverra aliquet eget. Arcu non odio euismod lacinia at. In ornare quam viverra orci sagittis eu volutpat odio. Libero justo laoreet sit amet cursus sit amet. Sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum. Condimentum lacinia quis vel eros donec. Eget aliquet nibh praesent tristique magna sit amet. Scelerisque eu ultrices vitae auctor. Et netus et malesuada fames ac turpis egestas maecenas. Habitant morbi tristique senectus et netus et malesuada fames. Bibendum at varius vel pharetra.</div>
+
+<button type="button" id='orange' class='text-color'>ORANGE</button>
+<button type="button" id='crimson' class='text-color'>CRIMSON</button>
+<button type="button" id='purple' class='text-color'>PURPLE</button>
+
+<button type="button" id="increase" class="text-size">INCREASE TEXT</button>
+<button type="button" id="decrease" class="text-size">DECREASE TEXT</button>
+
+<input type="text" id='RGB' class="RGB" value='(RRR,GGG,BBB)'>
+
+<button type="button" id='rButton'>INPUT VALUES THEN CLICK</button>
+
+<button type="button" id='defaultText'>DEFAULT TEXT</button>
+
+
+
+
+<script>
+$('#orange').click(function(){
+	$('#content').css('color','orange');
+});
+$('#purple').click(function(){
+	$('#content').css('color','purple');
+});
+$('#crimson').click(function(){
+	$('#content').css('color','crimson');
+});
+
+$('#increase').click(function(){
+	$('#content').css('font-size','100px');
+});
+
+$('#decrease').click(function(){
+	$('#content').css('font-size','0.8em');
+});
+
+
+$('#increase').click(function(){
+	$('#content').css('font-size','2em');
+});
+
+$('#defaultText').click(function(){
+	$('#content').css('font-size','1em');
+	$('#content').css('color','black');
+});
+
+$('#rButton').click(function(){
+	var RGBvalue = $('#RGB').val();
+	$('#content').css('color','rgb'+RGBvalue);
+
+});
+
+</script>
+
+
+
+</html>

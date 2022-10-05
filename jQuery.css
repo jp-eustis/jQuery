@@ -1,0 +1,58 @@
+#content{
+	position: absolute;
+	text-align: center;
+	top: 25%;
+	right: 10%;
+	left: 10%;
+}
+
+.text-color{
+	position: absolute;
+	top: 16%;
+}
+
+#orange{
+	position: absolute;
+	right: 45%;
+}
+#crimson{
+	position: absolute;
+	right: 55%;
+}
+
+#purple{
+	position: absolute;
+	right: 50%;
+}
+
+.text-size{
+	position: absolute;
+	top: 4%;
+}
+
+#decrease{
+	right: 52.5%;
+}
+#increase{
+	right: 44.8%;
+}
+
+.RGB{
+	position: absolute;
+	right: 47%;
+}
+
+#RGB{
+	top: 8%;
+}
+
+#rButton{
+	position: absolute;
+	right: 47%;
+	top: 12%;
+}
+
+#defaultText{
+	position: absolute;
+	right: 49%;
+}
